@@ -16,11 +16,9 @@ rustout = "0.2.0"
 Initialise the logger:
 ```rust
 use rustout::init_logger;
-use log::{error, warn, info, debug, trace};
 
 fn main() {
-    log::set_logger(&rustout).unwrap();
-    log::set_max_level(LevelFilter::Trace);  // Adjust log level filter 
+    init_logger()
 
     // Your code here
 }

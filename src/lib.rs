@@ -22,7 +22,7 @@ impl log::Log for RustOut {
 }
 
 /// Initializes the Rustout logger with the desired log level filter.
-pub fn init() {
+pub fn init_logger() {
     log::set_logger(&RustOut).unwrap();
     log::set_max_level(LevelFilter::Trace);
 }

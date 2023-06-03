@@ -4,11 +4,13 @@
 
 ## Usage
 
-Add `rustout` as a dependency in your `Cargo.toml` file:
+```
+cargo add rustout
+```
 
-```toml
-[dependencies]
-rustout = { git = "https://github.com/chrisquinnr/rustout" }
+Or, add `rustout` as a dependency in your `Cargo.toml` file:
+```
+rustout = "0.1.0"
 ```
 
 Initialise the logger:

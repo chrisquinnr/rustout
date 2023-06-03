@@ -10,13 +10,13 @@ cargo add rustout
 
 Or, add `rustout` as a dependency in your `Cargo.toml` file:
 ```
-rustout = "0.1.0"
+rustout = "0.2.0"
 ```
 
 Initialise the logger:
 ```rust
-use my_logger::rustout;
-use log::LevelFilter;
+use rustout::init_logger;
+use log::{error, warn, info, debug, trace};
 
 fn main() {
     log::set_logger(&rustout).unwrap();

@@ -4,9 +4,13 @@ description = "A simple, lightweight logger with minimal dependencies"
 license = "MIT OR Apache-2.0"
 authors = ["Chris Quinn <chrisquinnr@gmail.com>"]
 categories = ["command-line-utilities"]
-version = "0.3.0"
+version = "0.4.0"
 edition = "2021"
 
 [dependencies]
 log = "0.4"
 ansi_term = "0.12"
+
+[[bin]]
+name = "lib"
+path = "src/lib.rs"

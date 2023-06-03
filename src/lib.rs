@@ -28,7 +28,16 @@ impl log::Log for RustOut {
 }
 
 /// Initializes the Rustout logger with the desired log level filter.
-pub fn init_logger() {
+pub fn init_logger(log_level: LevelFilter) {
     log::set_logger(&RustOut).unwrap();
-    log::set_max_level(LevelFilter::Trace);
+    log::set_max_level(log_level);
+}
+
+pub fn main() {
+    init_logger(LevelFilter::Trace);
+    log::error!("This is an error message");
+    log::warn!("This is a warning message");
+    log::info!("This is an info message");
+    log::debug!("This is a debug message");
+    log::trace!("This is a trace message");
 }

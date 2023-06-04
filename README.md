@@ -14,7 +14,7 @@ cargo add rustout
 
 Or, add `rustout` as a dependency in your `Cargo.toml` file:
 ```
-rustout = "0.2.0"
+rustout = "0.4.1"
 ```
 
 Initialise the logger:

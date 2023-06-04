@@ -5,7 +5,7 @@ license = "MIT OR Apache-2.0"
 authors = ["Chris Quinn <chrisquinnr@gmail.com>"]
 repository = "https://github.com/chrisquinnr/rustout"
 categories = ["command-line-utilities"]
-version = "0.4.0"
+version = "0.4.1"
 edition = "2021"
 
 [dependencies]
